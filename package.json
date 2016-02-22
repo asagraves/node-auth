@@ -13,14 +13,16 @@
       "node": true,
       "es6": true,
       "jquery": true,
-      "browser": true,
-      "mocha": true
+      "browser": true
     },
     "extends": [
       "eslint:recommended"
     ],
     "rules": {
-      "no-console": 0
+      "no-console": 0,
+      "no-unusued-vars": 0,
+      "no-undef": 0,
+      "no-extra-semi": 0
     }
   },
   "repository": {
@@ -34,6 +36,7 @@
   },
   "homepage": "https://github.com/asagraves/node-auth#readme",
   "dependencies": {
+    "body-parser": "^1.15.0",
     "express": "^4.13.4",
     "jade": "^1.11.0"
   },
